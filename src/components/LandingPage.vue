@@ -15,12 +15,12 @@
         <SectionC/>
       </div>
 
-      <div id="sectionD" class="bg-success p-4">
-        <SectionD/>
+      <div id="sectionE" class="w-100 p-4">
+        <SectionE/>
       </div>
 
-      <div id="sectionE" class="bg-success p-4">
-        <SectionE/>
+      <div id="sectionD" class="vh-100 p-4">
+        <SectionD/>
       </div>
 
     </div>
@@ -43,20 +43,13 @@ export default {
 
 <style scoped>
 
-#sectionA {
-  background-color: #F7F8FA;
-}
 
-#sectionB {
-  background-color: #F7F8FA;
-}
-
-#sectionC {
+#sectionA #sectionB #sectionC #sectionD #sectionE {
   background-color: #F7F8FA;
 }
 
 #sectionD {
-  background: gray url("../assets/bg-sectionC.png") no-repeat center center;
+  background: #F7F8FA url("../assets/bg-sectionD.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
