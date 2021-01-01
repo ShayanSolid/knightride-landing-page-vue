@@ -11,12 +11,16 @@
         <SectionB/>
       </div>
 
-      <div id="sectionC" class="p-4">
+      <div id="sectionC" class="full-height p-4">
         <SectionC/>
       </div>
 
       <div id="sectionD" class="bg-success p-4">
         <SectionD/>
+      </div>
+
+      <div id="sectionE" class="bg-success p-4">
+        <SectionE/>
       </div>
 
     </div>
@@ -29,10 +33,11 @@ import SectionA from './SectionA';
 import SectionB from './SectionB';
 import SectionC from './SectionC';
 import SectionD from './SectionD';
+import SectionE from './SectionE';
 
 export default {
   name: 'landing-page',
-  components: { SectionD, SectionC, SectionB, SectionA, Navbar },
+  components: { SectionE, SectionD, SectionC, SectionB, SectionA, Navbar },
 };
 </script>
 

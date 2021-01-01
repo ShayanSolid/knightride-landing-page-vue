@@ -1,11 +1,11 @@
 <template>
   <div class="row">
     <div class="col my-auto">
-      <img id="ios-download" src="../assets/ios-download.png"
+      <img id="ios-download" src="../../../assets/ios-download.svg"
            alt="ios-download">
     </div>
     <div class="col my-auto">
-      <img id="android-download" src="../assets/android-download.png"
+      <img id="android-download" src="../../../assets/android-download.svg"
            alt="android-download">
     </div>
   </div>

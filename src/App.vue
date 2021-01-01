@@ -1,12 +1,16 @@
 <template>
   <div id="app">
     <router-view/>
+    <Footer/>
   </div>
 </template>
 
 <script>
+import Footer from './components/Footer';
+
 export default {
   name: 'App',
+  components: { Footer },
 };
 </script>
 
@@ -18,10 +22,5 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
-.full-height{
-  min-height: 100vh;
-}
-
 
 </style>

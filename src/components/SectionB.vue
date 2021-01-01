@@ -24,13 +24,12 @@
 </template>
 
 <script>
-import DownloadIcons from './DownloadIcons';
-import AppDetailImageLeft from './app-section/AppDetailImageLeft';
-import AppDetailImageRight from './app-section/AppDetailImageRight';
+import AppDetailImageLeft from './sectionA/AppDetailImageLeft';
+import AppDetailImageRight from './sectionA/AppDetailImageRight';
 
 export default {
   name: 'SectionB',
-  components: { AppDetailImageRight, AppDetailImageLeft, DownloadIcons },
+  components: { AppDetailImageRight, AppDetailImageLeft },
   data() {
     return {
       create_ride: {

@@ -3,11 +3,13 @@
 
     <div class="row">
       <div class="col-lg-5  pt-4 my-auto mx-auto">
-        <img id="knightride-logo-tyoe" class="img-fluid pb-4"
+        <img id="knightride-logo-type" class="img-fluid pb-4"
              src="../assets/Knightide-Textlogo@2x.png"
-             alt="knightride-logo-tyoe">
+             alt="knightride-logo-type">
         <h3 class="text-body pb-4"> {{ short_description }}</h3>
-        <div class="container-fluid">
+        <h3 class="text-body pb-0"> {{ register_text }}</h3>
+
+        <div class="container-fluid align-content-end">
           <DownloadIcons/>
         </div>
       </div>
@@ -22,18 +24,15 @@
 </template>
 
 <script>
-import DownloadIcons from './DownloadIcons';
+import DownloadIcons from './common-components/download-icons/DownloadIcons';
 
 export default {
   name: 'SectionA',
   components: { DownloadIcons },
   data() {
     return {
-      short_description: 'Du wirst jetzt mitgenommen\n' +
-        'und kannst noch einfacher \n' +
-        'Mitnehmen als je zuvor.\n' +
-        'Mit dem Bus. Mit der Bahn.\n' +
-        'Probier es aus.',
+      short_description: 'Deine Mitfahrgelegenheit für öffentliche Verkehrsmittel.',
+      register_text: 'Bekommst es mit sobald wir launchen!',
     };
   },
 };
@@ -45,7 +44,7 @@ export default {
   max-height: 90vh;
 }
 
-#knightride-logo-tyoe {
+#knightride-logo-type {
   width: 70%;
 }
 
