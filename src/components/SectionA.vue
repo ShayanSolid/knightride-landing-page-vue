@@ -3,9 +3,15 @@
 
     <div class="row">
       <div class="col-lg-5  pt-4 my-auto mx-auto">
-        <img id="knightride-logo-type" class="img-fluid pb-4"
-             src="../assets/Knightide-Textlogo@2x.png"
+        <picture>
+          <source srcset="../assets/Knightide-Textlogo_2x.webp "
+                  type="image/webp">
+          <source srcset="../assets/Knightide-Textlogo@2x.png"
+                  type="image/png">
+          <img id="knightride-logo-type" class="img-fluid pb-4"
+               src="../assets/Knightide-Textlogo@2x.png"
              alt="knightride-logo-type">
+        </picture>
         <h3 class="text-body pb-4"> {{ short_description }}</h3>
         <h3 class="text-body pb-0"> {{ register_text }}</h3>
 
@@ -15,7 +21,7 @@
       </div>
 
       <div class="col-lg-6 pt-4 pr-5">
-        <img id="ride-feed-img" class="img-fluid" src="../assets/Group-838@2x.png"
+        <img id="ride-feed-img" class="img-fluid" src="../assets/Group-838_2x.webp"
              alt="ride-feed-img">
       </div>
 

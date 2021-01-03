@@ -3,7 +3,7 @@
     <a class="navbar-brand mx-auto pr-lg-2 pl-2 pr-sm-0" href="#">
       <router-link to="/#sectionA" class="container">
         <img class=" d-inline-block align-top pr-2" id="knightride_logo"
-             src="../assets/knightride-logo.png" width="30"
+             src="../assets/knightride-logo.webp" width="30"
              alt="Logo">
         Knightride
       </router-link>
