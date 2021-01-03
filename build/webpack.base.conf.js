@@ -36,6 +36,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      modernizr$: path.resolve(__dirname, '.modernizrrc.js'),
     }
   },
   module: {
@@ -50,6 +51,20 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+      },
+      {
+        loader: "webpack-modernizr-loader",
+        options: {
+          // Full list of supported options can be found in [config-all.json](https://github.com/Modernizr/Modernizr/blob/master/lib/config-all.json).
+          options: ["setClasses","prefixed"],
+          "feature-detects": [
+            "img/webp-alpha",
+            "img/webp-animation",
+            "img/webp-lossless",
+            "img/webp",
+          ]
+        },
+        test: /empty-alias-file\.js$/
       },
       {
         test: /\.(png|jpe?g|gif|svg|webp)(\?.*)?$/,

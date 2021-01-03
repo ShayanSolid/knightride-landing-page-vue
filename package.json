@@ -12,11 +12,14 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.21.2",
     "jquery": "^3.5.1",
+    "modernizr": "^3.11.4",
     "popper.js": "^1.16.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
-    "vue-scrollto": "^2.20.0"
+    "vue-scrollto": "^2.20.0",
+    "webpack-modernizr-loader": "^5.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

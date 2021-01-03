@@ -18,7 +18,7 @@
         <SectionE/>
       </div>
 
-      <div id="sectionD" class="vh-100 p-4">
+      <div class="sectionD vh-100 p-4">
         <SectionD/>
       </div>
 
@@ -32,10 +32,11 @@ import SectionB from './SectionB';
 import SectionC from './SectionC';
 import SectionD from './SectionD';
 import SectionE from './SectionE';
+import Carousel from './Carousel';
 
 export default {
   name: 'landing-page',
-  components: { SectionE, SectionD, SectionC, SectionB, SectionA },
+  components: { Carousel, SectionE, SectionD, SectionC, SectionB, SectionA },
 };
 </script>
 
@@ -48,6 +49,21 @@ export default {
 
 #sectionD {
   background: #F7F8FA url("../assets/bg-sectionD.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  height: 80vh;
+}
+.no-webp .sectionD {
+  background: #F7F8FA url("../assets/bg-sectionD.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  height: 80vh;
+}
+
+.webp .sectionD {
+  background: #F7F8FA url("../assets/bg-sectionD.webp") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
