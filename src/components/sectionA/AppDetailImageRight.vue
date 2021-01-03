@@ -7,8 +7,14 @@
     </div>
 
     <div class="col-lg-5 col-sm-8 my-auto mx-auto">
-      <img :id='id' :src="require(`@/assets/${imageSrc}`)"
-           class="img-fluid" :alt='id'>
+      <picture>
+        <source :srcset="require(`@/assets/${imageName}.webp`)"
+                type="image/webp">
+        <source :srcset="require(`@/assets/${imageName}.png`)"
+                type="image/png">
+        <img :id='id' :src="require(`@/assets/${imageName}.png`)"
+             class="img-fluid" :alt='id'>
+      </picture>
     </div>
 
     <div class="col-lg-5 pb-sm-5 pt-sm-5 my-auto mx-auto d-block d-lg-none">
@@ -23,7 +29,7 @@
 <script>
 export default {
   name: 'AppDetailImageRight',
-  props: ['header', 'body', 'imageSrc', 'id'],
+  props: ['header', 'body', 'imageName', 'id'],
 };
 </script>
 

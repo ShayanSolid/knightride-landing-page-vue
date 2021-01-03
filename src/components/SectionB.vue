@@ -2,22 +2,22 @@
   <div class="container pt-5">
 
     <AppDetailImageLeft :header='create_ride.header' :body='create_ride.body'
-                        image-src="create-ride.png" id="create_ride"/>
+                        imageName="create-ride" id="create_ride"/>
 
     <AppDetailImageRight :header='ride_take.header' :body='ride_take.body'
-                         image-src="ride-take.png" id="create_ride"/>
+                         imageName="ride-take" id="create_ride"/>
 
     <AppDetailImageLeft :header='chat_screen.header' :body='chat_screen.body'
-                        image-src="chat.png" id="create_ride"/>
+                        imageName="chat" id="create_ride"/>
 
     <AppDetailImageRight :header='profile_screen.header' :body='profile_screen.body'
-                         image-src="profile.png" id="create_ride"/>
+                         imageName="profile" id="create_ride"/>
 
     <AppDetailImageLeft :header='profile2_screen.header' :body='profile2_screen.body'
-                        image-src="profile2.png" id="create_ride"/>
+                        imageName="profile2" id="create_ride"/>
 
     <AppDetailImageRight :header='profile3_screen.header' :body='profile3_screen.body'
-                         image-src="profile3.png" id="create_ride"/>
+                         imageName="profile3" id="create_ride"/>
 
 
   </div>
