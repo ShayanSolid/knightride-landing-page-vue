@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Navbar/>
     <div class="container-fluid m-0 p-0">
 
       <div id="sectionA" class="full-height p-4">
@@ -28,7 +27,6 @@
 </template>
 
 <script>
-import Navbar from './Navbar';
 import SectionA from './SectionA';
 import SectionB from './SectionB';
 import SectionC from './SectionC';
@@ -37,7 +35,7 @@ import SectionE from './SectionE';
 
 export default {
   name: 'landing-page',
-  components: { SectionE, SectionD, SectionC, SectionB, SectionA, Navbar },
+  components: { SectionE, SectionD, SectionC, SectionB, SectionA },
 };
 </script>
 
